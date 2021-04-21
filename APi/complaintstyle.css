@@ -1,0 +1,33 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-color: cornflowerblue;
+}
+
+.input {
+  box-sizing: border-box;
+  height: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  height: 50px;
+  width: 100px;
+  margin: 10px;
+  background-color: crimson;
+  color: whitesmoke;
+  text-align: center;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: coral;
+  color: cornsilk;
+}
