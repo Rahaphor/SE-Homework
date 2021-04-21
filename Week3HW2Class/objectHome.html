@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric figures</title>
+    
+</head>
+<body>
+    <h1>Object oriented programming geometric figures - </h1>
+    <hr>
+    <h1>Circle Class</h1>
+    <p>What is the area of:</p>
+    <p id="circlearea"></p>
+    <p>What is the total sides?</p>
+    <p id="circlesides"></p>
+    <hr>
+    <h1>Rectangle Class</h1>
+    <p>What is the the area of the rectangle?</p>
+    <p id="rectanglearea"></p>
+    <p>What is the the total sides of the rectangle?</p>
+    <p id="rectanglesides">4</p>
+    <hr>
+    <h1>Triangle Class</h1>
+    <p>What is the the area of the Square?</p>
+    <p id="trianglearea"></p>
+    <p>What is the total sides of Square?</p>
+    <p id="trianglesides">4</p>
+    <script>
+        class Circle {
+            constructor(radius) {
+                this.radius = radius;
+            }
+            circle_area() {
+                const firstStep1 = this.radius * this.radius;
+                const pi = 3.14;
+                return firsttep1 * pi
+            }
+            circle_sides() {
+                const circlesides = this.radius * 2 * 3.14
+                return circlesides
+            }
+        }
+        const display = document.getElementById("circlearea")
+        const display1 = document.getElementById("circlesides")
+        display.innerHTML = new Circle(4).circle_area()
+        display1.innerHTML = new Circle(4).circle_sides()
+        
+        
+        class Rectangle {
+            constructor(length, width) {
+                this.length = length
+                this.width = width
+            }
+            rectangle_area() {
+                return this.length * this.width
+            }
+        }
+        const display2 = document.getElementById("rectanglearea");
+        display2.innerHTML = new Rectangle(4, 5).rectangle_area()
+        
+        
+        
+        class Square {
+            constructor(side) {
+                this.side = side;
+            }
+            SquareArea() {
+                return this.side * this.side
+            }
+        }
+        const display3 = document.getElementById("trianglearea");
+        display3.innerHTML = new Square(5).SquareArea()
+    </script>
+</body>
+</html>
