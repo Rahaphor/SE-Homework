@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+      <script type="text/javascript" src="app.js" defer></script>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- JEOPARDY BOARD  -->
+<div>
+    <div class="board">
+      <div class="row categories">
+        <div class="tile" id="topic">JAVASCRIPT</div>
+        <div class="tile" id="topic">HTML</div>
+        <div class="tile" id="topic">CSS</div>
+        <div class="tile" id="topic">EVENTS</div>
+        <div class="tile" id="topic">OOP</div>
+      </div>
+      <div class="row clues">
+        <div class="tile"> 
+          <div class="question-value">$100</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile">
+          <div class="question-value">$100</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile">
+          <div class="question-value">$100</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile">
+          <div class="question-value">$100</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile">
+          <div class="question-value">$100</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+      </div>
+      <div class="row clues">
+        <div class="tile"> 
+          <div class="question-value" id='two'>$200</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile">
+          <div class="question-value" id='two'>$200</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile">
+          <div class="question-value" id='two'>$200</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile">
+          <div class="question-value" id='two'>$200</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile">
+          <div class="question-value" id='two'>$200</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+      </div>
+      <div class="row clues">
+        <div class="tile" onclick="toggleActive(this)"> 
+          <div class="question-value" id='three'>$300</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value" id='three'>$300</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value" id='three'>$300</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value" id='three'>$300</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value" id='three'>$300</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+      </div>
+      <div class="row clues">
+        <div class="tile" onclick="toggleActive(this)"> 
+          <div class="question-value" id='four'>$400</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value" id='four'>$400</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value" id='four'>$400</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value" id='four'>$400</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value" id='four'>$400</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+      </div>
+      <div class="row clues">
+        <div class="tile" onclick="toggleActive(this)"> 
+          <div class="question-value" id='five'>$500</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value" id='five'>$500</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value" id='five'>$500</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value" id='five'>$500</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value" id='five'>$500</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+      </div>
+      <div class="row clues" id= "scoreboard">
+        <div id="team1">
+          TEAM 1
+          <h1 class="score1"></h1>
+          <button class="increment1">+</button>
+          <button class="decrement1">-</button>
+        </div>
+        <div id="team2">
+          TEAM 2
+          <h1 class="score2"></h1>
+          <button class="increment2">+</button>
+          <button class="decrement2">-</button>
+        </div>
+        <div id="team3">
+          TEAM 3
+          <h1 class="score3"></h1>
+          <button class="increment3">+</button>
+          <button class="decrement3">-</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
