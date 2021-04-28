@@ -1,0 +1,42 @@
+body {
+  background: linear-gradient(to right, orange, blue);
+}
+
+.wrapper {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  margin: 15px;
+  font-size: 6rem;
+  color: green, white, green;
+}
+
+.dice-area {
+  margin: 0px 50px;
+  text-align: center;
+  display: inline-block;
+}
+
+p {
+  font: 2.5rem;
+  color: green, white, green;
+}
+
+img {
+  width: 320px;
+}
+
+#letsroll {
+  color: aquamarine;
+  padding: 12px;
+  background-color: azure;
+  font-size: 24px;
+  border: 1px solid white;
+  border-radius: 6px;
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+}
