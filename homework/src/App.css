@@ -1,0 +1,48 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  gap: 20px 25px;
+  height: 100vh;
+  width: auto;
+  grid-template-areas:
+    "sidebar header1 header2 header3"
+    "sidebar main main main"
+    "sidebar main main main";
+}
+.LeftSide {
+  grid-area: sidebar;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  justify-content: center;
+}
+.Reviews {
+  grid-area: header1;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+.AvgRating {
+  grid-area: header2;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+.Analysis {
+  grid-area: header3;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+.WebsiteVisitors {
+  grid-area: main;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
