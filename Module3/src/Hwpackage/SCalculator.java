@@ -21,7 +21,6 @@ public class SCalculator {
 
 	public static void main(String[] args) {
 		
-		
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.println("What are the two numbers from 1-5?");
